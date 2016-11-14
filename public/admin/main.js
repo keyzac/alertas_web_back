@@ -12,11 +12,3 @@ function mostrar(data){
 
 	document.getElementById('mensajito').innerHTML = html;
 }
-
-function lanzaMensaje(e){
-	var cargar = "karaoke pinchi-sama";
-	console.log("se apreto el boton");
-
-	socket.emit('nuevo-mensaje', cargar);
-	return false;
-}
