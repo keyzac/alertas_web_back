@@ -4,8 +4,8 @@ socket.on('mensaje', function(data){
 	console.log(data);
 });
 
-function lanzaMensaje(e){
-	var cargar = "Alerta enviada";
+function lanzaMensaje(alerta){
+	var cargar = 'alerta';
 	console.log("Boton apretado en android");
 
 	socket.emit('nuevo-mensaje', cargar);
